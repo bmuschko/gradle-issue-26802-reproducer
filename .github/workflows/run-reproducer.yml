@@ -16,8 +16,3 @@ jobs:
       name: Run without verifying metadata
       with:
         arguments: help --info
-      continue-on-error: true
-    - uses: gradle/gradle-build-action@v2
-      name: Write verification metadata
-      with:
-        arguments: --write-verification-metadata sha256 help --info
